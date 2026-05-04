@@ -76,7 +76,7 @@ async function main() {
         console.error('✗ Could not find existing user')
         process.exit(1)
       }
-      authData!.user = existingUser
+      (authData as any).user = existingUser
     } else {
       console.error('✗ Failed to create user:', authError.message)
       process.exit(1)
