@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo=false",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seed": "tsx --env-file .env.local scripts/seed.ts"
+    "seed": "tsx --env-file .env.local scripts/seed.ts",
+    "add-customer": "tsx --env-file .env.local scripts/add-customer.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",
